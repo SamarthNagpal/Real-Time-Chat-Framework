@@ -184,10 +184,7 @@ class SearchResults(Frame):
             row += 1
         Button(self.second_frame, text='Go Back').grid(row=row, columnspan=6, sticky=N+S+E+W)
 
-
-program = Program()
-
-
+        
 class ChatListWindow(Frame):
     def __init__(self, parent, controller):
         Frame.__init__(self, parent)
@@ -198,6 +195,9 @@ class ChatWindow(Frame):
     def __init__(self, parent, controller):
         Frame.__init__(self, parent)
         pass
+
+        
+program = Program()
 
 
 class ConnectionThread(threading.Thread):
